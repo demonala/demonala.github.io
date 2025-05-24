@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Diamond Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginPage" class="page active">
+        <div class="auth-container">
+            <h2>Please Log In</h2>
+            <p class="disclaimer-login">Use Your Username For This Session</p>
+            <input type="text" id="usernameInput" placeholder="Masukkan Username Anda">
+            <button id="loginButton">Login</button>
+        </div>
+    </div>
+
+    <div id="generatorPage" class="page">
+        <header>
+            <h1 id="welcomeMessage">Welcome!</h1>
+            <button id="logoutButton">Logout</button>
+        </header>
+
+        <div class="container">
+            <h2>Diamond Visualizer</h2>
+            <p class="disclaimer">THIS IS ILLEGAL DIAMOND/GIFT</p>
+
+            <div class="input-group">
+                <label for="userId">Masukkan User ID Mobile Legends Anda:</label>
+                <input type="text" id="userId" name="userId" placeholder="Contoh: 12345678 (9012)">
+                <button id="saveIdButton">Simpan ID untuk Sesi Ini</button>
+            </div>
+            <p id="savedIdMessage" class="saved-id-info"></p>
+
+            <div class="generator-options">
+                <h3>Pilih "Hadiah" Visual:</h3>
+                <button class="generator-btn" data-type="Diamonds">Generate Diamonds</button>
+                <button class="generator-btn" data-type="Starlight">Get Starlight Gift</button>
+                <button class="generator-btn" data-type="WeeklyPass">Get Weekly Diamond Pass</button>
+            </div>
+
+            <div id="resultArea">
+                </div>
+        </div>
+
+        <footer>
+            <div id="rewardNotice">
+                </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
